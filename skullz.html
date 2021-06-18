@@ -9,11 +9,17 @@
         border-radius: 50%;
         display: inline-block;
     }
+/*    the dot class uses height and width to give the sizing of the dots. the background color is bbb that means a sort of gray
+border-radius is what changes the shape of how round a shape is, its border which makes it circular at 50%.
+when changed to 75% or 100%, nothing really happened. the circles look the same. at 25%, the circles become more square.
+inline block means they are all on the same line in their block.*/
 </style>
 </head>
 <html>
 <body>
 
+<!--this div has the style class, the text align dictates where the contents will appear. in this case, the alignment is centered.
+furthermore, spans are inline, and this is also reflected in the css.-->
 <div style="text-align:center">
     <h1>Round Dots / Circles</h1>
     <span class="dot"></span>
@@ -24,10 +30,13 @@
 
 <h3>A demonstration of how to access a SPAN element</h3>
 
+<!--the span is an inline element. in this case, it is used as an id. id's use # in css, while classes use a .
+the span also contains a style tage in which the color is blue.-->
 <p>My mother has <span id="mySpan" style="color:blue;">blue</span> eyes.</p>
 
 <p>Click the button to get the color of the span element.</p>
 
+<!--onclick invokes the js function-->
 <button onclick="myFunction()">Try it</button>
 
 <p id="demo"></p>
