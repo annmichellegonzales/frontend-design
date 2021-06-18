@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    .dot {
-        height: 25px;
-        width: 25px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-    }
-/*    the dot class uses height and width to give the sizing of the dots. the background color is bbb that means a sort of gray
-border-radius is what changes the shape of how round a shape is, its border which makes it circular at 50%.
-when changed to 75% or 100%, nothing really happened. the circles look the same. at 25%, the circles become more square.
-inline block means they are all on the same line in their block.*/
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        /*    the dot class uses height and width to give the sizing of the dots. the background color is bbb that means a sort of gray
+        border-radius is what changes the shape of how round a shape is, its border which makes it circular at 50%.
+        when changed to 75% or 100%, nothing really happened. the circles look the same. at 25%, the circles become more square.
+        inline block means they are all on the same line in their block.*/
+    </style>
 </head>
 <html>
 <body>
@@ -32,16 +33,27 @@ furthermore, spans are inline, and this is also reflected in the css.-->
 
 <!--the span is an inline element. in this case, it is used as an id. id's use # in css, while classes use a .
 the span also contains a style tage in which the color is blue.-->
-<p>My mother has <span id="mySpan" style="color:blue;">blue</span> eyes.</p>
+<!--<p>My mother has <span id="mySpan" style="color:blue;">blue</span> eyes.</p>-->
+
+<!--I added background-color to see what would happen. -->
+<p>My mother has <span id="mySpan" style="background-color:blue; color: yellow">blue</span> eyes.</p>
 
 <p>Click the button to get the color of the span element.</p>
 
-<!--onclick invokes the js function-->
+<!--onclick invokes the js function. button tag gives the shape and behavior of a button.-->
 <button onclick="myFunction()">Try it</button>
 
+<!--this id is where the js will show its response after the buttons is clicked with its "onclick behavior".
+it has an id of "demo" which is used on the getElementById section.-->
 <p id="demo"></p>
 
 <script>
+    // javascript function with the name of myFunction
+    // a variable is created called x which grabs "mySpan" fromt he document with the getElementById method.
+    // style and color mean where the get is getting its info from
+    //the "demo" part is where the js pops up its response. i tried doing background color, and it didn't work the way i thought.
+
+
     function myFunction() {
         var x = document.getElementById("mySpan").style.color;
         document.getElementById("demo").innerHTML = x;
