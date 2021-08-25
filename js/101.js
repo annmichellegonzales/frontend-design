@@ -311,3 +311,16 @@ assert(isEven(positiveEvenNumber), true, "Exercise 15");
 assert(isEven(negativeOddNumber), false, "Exercise 15");
 assert(isEven(negativeEvenNumber), true, "Exercise 15");
 addToDone("Exercise 15 is correct.")
+
+function identity(x) {
+    var identity = (x)
+    return identity;
+}
+
+assert(identity(fruits), fruits, "Exercise 16");
+assert(identity(vegetables), vegetables, "Exercise 16");
+assert(identity(positiveOddNumber), positiveOddNumber, "Exercise 16");
+assert(identity(positiveEvenNumber), positiveEvenNumber, "Exercise 16");
+assert(identity(negativeOddNumber), negativeOddNumber, "Exercise 16");
+assert(identity(negativeEvenNumber), negativeEvenNumber, "Exercise 16");
+addToDone("Exercise 16 is correct.");
