@@ -1,0 +1,40 @@
+/* add your CSS here */
+* {
+    padding: 3px 4px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 325px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+img {
+    width: 300px;
+}
+
+.marsupial {
+    font-style: italic;
+}
+
+span {
+    font-weight: bold;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
